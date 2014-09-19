@@ -1,4 +1,5 @@
-squid
+Squid
 =====
 
-Python Library for teh Raspbery Squid RGB LED
+A Python library to drive the Raspberry Squid RGB LED.
+
