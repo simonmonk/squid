@@ -51,8 +51,51 @@ $ sudo python gui.py
 
 This will open up the window below. Dragging the sliders about will allow you to mix any color.
 
-![GUI Example]()
+![GUI Example](http://www.simonmonk.org/wp-content/uploads/2014/09/sliders_gui.png)
 
 
 # API Documentation
+
+You can probably find all you need to know by looking at the source code for the examples.  
+
+## Importing the library
+
+```
+from squid import *
+```
+
+
+## Creating an Instance
+
+```
+rgb = Squid(18, 23, 24)
+```
+
+The three parameters are the pins connected tot he red, green and blue LEDs.
+
+
+
+## set_color
+
+```
+rgb.set_color(RED)
+```
+
+The color can be one of the following constants: WHITE, OFF, RED, GREEN, BLUE, YELLOW, PURPLE and CYAN. 
+
+You can also just provide a tuple containing R, G and B values each between 0 and 100, like this:
+
+```
+rgb.set_color((100, 50, 10))
+```
+
+An optional second argument allows you specify the brightness of the color. The value of 100 is equivalent to one of the LEDs only being on at full brightness, thus if you make your R, G and B values add up to 100, then you can reasonably set the brightness value between 0 and 300.
+
+```
+rgb.set_color(CYAN, 300)
+```
+
+## set_red(), set_green(), set_blue()
+
+These methods allow you to set the three channels separately.
 
