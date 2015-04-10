@@ -18,6 +18,39 @@ You will also need soldering equipment and a hot air gun.
 
 ![Parts](http://simonmonk.org/wp-content/uploads/2015/04/01_parts-copy.jpg)
 
+## Step 1. Prepare the LED
+
+Leave the longest lead (common cathode) untouched, but trim the other leads as shown below.
+
+![Preparing the LED](http://simonmonk.org/wp-content/uploads/2015/04/02_helping-hands-copy.jpg)
+
+A apir of helping hands will - well - help.
+
+## Step 2. Solder on the resistors
+
+Trim the resistor leads and solder one end to each of the three short anode leads on the LED.
+
+![Soldering the Resistors](http://simonmonk.org/wp-content/uploads/2015/04/04_soldering_r-copy.jpg)
+
+When all the resistors are soldered, it will look like this.
+
+![soldering the Resistors](http://simonmonk.org/wp-content/uploads/2015/04/05_soldering_resistors-copy.jpg)
+
+## Step 3. Solder on the header wires
+
+Slip the heat shrink sleaving over the wires BEFORE soldering the wires to the resistor wires and the common cathode. Use red for the red anode, green for bgreen and blue for blue and use a black wire for the common cathode.
+
+![soldering the header wires](http://simonmonk.org/wp-content/uploads/2015/04/07_all_leads-copy.jpg)
+
+## Step 4. Shrink the sleave
+
+Push the heat shrink sleaves right up to the body of the LED and then shrink the wires using a hot air gun.
+
+![shrinking the sleave](http://simonmonk.org/wp-content/uploads/2015/04/10_after_hot_air-copy.jpg)
+
+If you don't want to make your own Squid, you can also buy a ready made Raspberry Squid from http://www.monkmakes.com
+
+
 # An RGB LED Python Library.
 
 Squid is a Python library to drive the Raspberry Squid RGB LED. Or in fact any common cathode RGB LED.
