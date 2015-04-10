@@ -1,6 +1,23 @@
 Squid
 =====
 
+# Make Your Squid
+
+The Raspberry Squid is an open source hardware design for an RGB LED with built-in resistors and header lead sockets that can fit directly onto GPIO pins.
+
+## You will need
+
+To make your own Squid, you will need the following parts:
+
++ An RGB common cathode diffuse LED (the bigger the better)
++ 3 x 470 Ohm resistors
++ Red, green, blue and black Female to Female jumper wires cut in half
++ 4 short lenths of heat shrink
+
+You will also need soldering equipment and a hot air gun.
+
+![Parts](http://simonmonk.org/wp-content/uploads/2015/04/01_parts-copy.jpg)
+
 # An RGB LED Python Library.
 
 Squid is a Python library to drive the Raspberry Squid RGB LED. Or in fact any common cathode RGB LED.
