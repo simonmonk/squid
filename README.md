@@ -18,7 +18,7 @@ The Raspberry Squid is an RGB LED with built-in series resistors and sockets tha
 
 The Raspberry Button follows the same concept, but has a push switch with protection resistor built into the leads.
 
-
+![Raspberry Squid](http://www.monkmakes.com/wp-content/uploads/2015/09/button-web.jpg)
 
 # Installation
 
