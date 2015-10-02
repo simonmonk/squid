@@ -1,9 +1,11 @@
 Squid
 =====
 
-The Raspberry Squid is an open source hardware design for an RGB LED with built-in resistors and header lead sockets that can fit directly onto GPIO pins. If you don't want to make your own Squid, you can buy a ready made Raspberry Squid from http://www.monkmakes.com
+The Raspberry Squid is an RGB LED with built-in resistors and header lead sockets that can fit directly onto GPIO pins. 
 
-The Squid has its own library to make it super easy to mix colors on the RGB LED. After the library documentation that follows, you will find instructions on how to create your own Squid.
+The Squid has its own library to make it super easy to mix colors on the RGB LED. After the library documentation that follows, you will find instructions on how to create your own Squid. Please feel free to make a squid for your own use, but please don't make them to resell. 
+
+If you don't want to make your own Squid, you can buy a ready made Raspberry Squid from http://www.monkmakes.com
 
 
 
