@@ -54,8 +54,8 @@ class Squid:
         self.set_blue(b * brightness / 100)
         
     def set_color_rgb(self, rgb_string):
-        self.set_red(int(rgb_string[1:3], 16) / 255
-        self.set_green(int(rgb_string[3:5], 16) / 255
-        self.set_blue(int(rgb_string[5:7], 16) / 255
+        self.set_red(int(rgb_string[1:3], 16) / 255)
+        self.set_green(int(rgb_string[3:5], 16) / 255)
+        self.set_blue(int(rgb_string[5:7], 16) / 255)
         
 
