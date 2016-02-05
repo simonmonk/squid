@@ -1,7 +1,7 @@
 Squid
 =====
 
-The Raspberry Squid is an RGB LED with built-in resistors and header lead sockets that can fit directly onto GPIO pins. 
+The Raspberry Squid is an RGB LED with built-in resistors and header lead sockets that can fit directly onto GPIO pins of a Raspberry Pi. 
 
 The Squid has its own library to make it super easy to mix colors on the RGB LED. After the library documentation that follows, you will find instructions on how to create your own Squid. Please feel free to make a squid for your own use, but please don't make them to resell. 
 
@@ -12,9 +12,9 @@ If you don't want to make your own Squid, you can buy a ready made Raspberry Squ
 
 # An RGB LED Python Library.
 
-Squid is a Python library to drive the Raspberry Squid RGB LED. Or in fact any common cathode RGB LED. The library also includes code for switch debouncing. Something that uoi may find useful if you have the Raspberry Squid's companion the Raspberry Button.
+Squid is a Python library to drive the Raspberry Squid RGB LED. Or in fact any common cathode RGB LED. The library also includes code for switch debouncing. Something that you may find useful if you have the Raspberry Squid's companion the Raspberry Button.
 
-The Raspberry Squid is an RGB LED with built-in series resistors and sockets that will plug directly onto the GPIO header of a Raspberry Pi.
+The Raspberry Squid is an RGB LED with built-in series resistors and sockets on the end of color-coded flying leads that will plug directly onto the GPIO header of a Raspberry Pi.
 
 ![Raspberry Squid](http://www.simonmonk.org/wp-content/uploads/2014/09/squid_on_b_plus_1-web-1024x437.jpg)
 
@@ -35,7 +35,7 @@ $ sudo python setup.py install
 # Connect the RGB LED
 
 Plug in a Squid or connect up an RGB LED as follows:
-+ Black, Common cathode of the LED to GND
++ Black, Common cathode of the LED to GND (the one between GPIO 18 and 23 is most convenient)
 + Red squid lead to GPIO18
 + Green squid lead to GPIO23
 + Blue squid lead to GPIO24
@@ -62,7 +62,7 @@ To run **gui.py** enter the following command:
 $ sudo python gui.py
 ```
 
-This will open up the window below. Dragging the sliders about will allow you to mix any color.
+This will open up the window below. Dragging the sliders about will allow you to mix any color. Note that this esample program requires a graphical interface so you cannot run it from SSH.
 
 ![GUI Example](http://www.simonmonk.org/wp-content/uploads/2014/09/sliders_gui.png)
 
@@ -84,7 +84,7 @@ from squid import *
 rgb = Squid(18, 23, 24)
 ```
 
-The three parameters are the pins connected tot he red, green and blue LEDs.
+The three parameters are the pins connected to the red, green and blue LEDs.
 
 
 
@@ -108,9 +108,19 @@ An optional second argument allows you specify the brightness of the color. The 
 rgb.set_color(CYAN, 300)
 ```
 
-## set_red(), set_green(), set_blue()
+## set_red(duty), set_green(duty), set_blue(duty)
 
-These methods allow you to set the three channels separately.
+These methods allow you to set the three channels separately. They take one parameter which is the duty cycle for that channel of betweem 0.0 (off) and 1.0 (full brightness).
+
+
+## set_color_rgb(rgb_string)
+
+This method sets the LED color to an internet color value of the form #FF0000. That is a # followed by a six digit hexadecimal string. The six digit string comprises three two character hex value for the red, green and blue channels.
+
+```
+rgb.set_color('#FF0000') # red
+```
+
 
 # Connect a Raspberry Button
 
