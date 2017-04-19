@@ -26,11 +26,23 @@ The Raspberry Button follows the same concept, but has a push switch with protec
 
 To install the library on your Raspberry Pi, enter the following commands in LX Terminal.
 
+For Python 2 use:
+
 ```
 $ git clone https://github.com/simonmonk/squid.git
 $ cd squid
 $ sudo python setup.py install
 ```
+
+
+For Python 3 use:
+
+```
+$ git clone https://github.com/simonmonk/squid.git
+$ cd squid
+$ sudo python3 setup.py install
+```
+
 
 # Connect the RGB LED
 
@@ -96,10 +108,10 @@ rgb.set_color(RED)
 
 The color can be one of the following constants: WHITE, OFF, RED, GREEN, BLUE, YELLOW, PURPLE and CYAN. 
 
-You can also just provide a tuple containing R, G and B values each between 0 and 100, like this:
+You can also just provide an array containing R, G and B values each between 0 and 100, like this:
 
 ```
-rgb.set_color((100, 50, 10))
+rgb.set_color([100, 50, 10])
 ```
 
 An optional second argument allows you specify the brightness of the color. The value of 100 is equivalent to one of the LEDs only being on at full brightness, thus if you make your R, G and B values add up to 100, then you can reasonably set the brightness value between 0 and 300.
