@@ -12,6 +12,8 @@ If you don't want to make your own Squid, you can buy a ready made Raspberry Squ
 
 # An RGB LED Python Library.
 
+Please note that GPIO Zero, the standard Raspberry Pi GPIO library, directly supports RGB LEDs like the Raspberry Squid. So you may just prefer to use this: https://gpiozero.readthedocs.io/en/stable/api_output.html#rgbled
+
 Squid is a Python library to drive the Raspberry Squid RGB LED. Or in fact any common cathode RGB LED. The library also includes code for switch debouncing. Something that you may find useful if you have the Raspberry Squid's companion the Raspberry Button.
 
 The Raspberry Squid is an RGB LED with built-in series resistors and sockets on the end of color-coded flying leads that will plug directly onto the GPIO header of a Raspberry Pi.
